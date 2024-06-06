@@ -79,7 +79,7 @@ function App() {
       const newProject = {
         ...projectData,
         id: projectId,
-        tasks: [], // Projeye ait görevler için boş bir liste ekliyoruz
+        tasks: [],
       };
       return {
         ...prevState,
@@ -107,7 +107,7 @@ function App() {
         onDelete={handleDeleteProject}
         onAddTask={handleAddTask}
         onDeleteTask={handleDeleteTask}
-        tasks={selectedProject.tasks} // Sadece seçili projenin görevlerini gönderiyoruz
+        tasks={selectedProject.tasks}
       />
     );
   }
